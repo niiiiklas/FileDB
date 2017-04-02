@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>40</y>
+      <w>140</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Config
+-
+-pageCountInitial:int
+-pageSizeRows:int
+-rowLength:int
+-encryption:bool
+--
+-directoryPath:string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>90</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>AttributeIndex</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>130</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>AttributeKey</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>240</y>
+      <w>190</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Page
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>270</y>
+      <w>120</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>DB
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>260</y>
+      <w>190</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Page
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>210</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>PageIndexes</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
