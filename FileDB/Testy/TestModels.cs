@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileDBTests
+namespace Testy
 {
     public class TestModels
     {

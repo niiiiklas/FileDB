@@ -19,13 +19,9 @@ namespace FDB.Model
     {
         IFileOps FileOperations { get; set; }
 
-        public Page()
+        public Page(IFileOps fileOps)
         {
-            string entityName = typeof(T).Name; //Use for db file name
-            var properties = typeof(T).GetRuntimeProperties();
-
-            FileOperations = FileOperationsImpl.NewInstance()
-            
+            this.FileOperations = fileOps;
         }
 
         public void Save(T entity)

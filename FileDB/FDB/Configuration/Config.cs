@@ -6,18 +6,17 @@ namespace FDB.Configuration
 {
     public class ConfigBuilder
     {
-        private ConfigBuilder() { }
-
-
-        Config config = new Config();
-        public static ConfigBuilder NewBuilder()
+        public ConfigBuilder()
         {
-            return new ConfigBuilder();
+
         }
+
+
+        Config config = Config.GetInstance();
 
         public ConfigBuilder SetDefaultDirectory(string directoryPath)
         {
-            config.DefaultDirectory = directoryPath;
+            config.RootDirectory = directoryPath;
             return this;
         }
 
@@ -36,7 +35,23 @@ namespace FDB.Configuration
 
     public class Config
     {
-        public string DefaultDirectory { get; set; }
+        public static Config ConfigInstance { get; private set; }
+        private static Config DEFAULT = new Config()
+        {
+            RootDirectory = "./FDB_TEST",
+            Encrypted = false
+        };
+
+        private Config() { }
+
+        public static Config GetInstance()
+        {
+            if (ConfigInstance == null)
+                ConfigInstance = DEFAULT;
+            return ConfigInstance;
+        }
+
+        public string RootDirectory { get; set; }
         public bool Encrypted { get; set; }
     }
 }

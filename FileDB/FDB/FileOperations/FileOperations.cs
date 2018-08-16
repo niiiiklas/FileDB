@@ -23,6 +23,8 @@ namespace FDB.FileOperations
             this.Directory = directory;
             this.SegmentLength = lineLength;
 
+            System.IO.Directory.CreateDirectory(directory);
+
             if (!System.IO.File.Exists(Directory))
                 System.IO.File.Create(Directory);
             else

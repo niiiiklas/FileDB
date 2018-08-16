@@ -2,7 +2,7 @@
 using FDB;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace FileDBTests
+namespace Testy
 {
     [TestClass]
     public class Parser
